@@ -1,0 +1,547 @@
+{
+    "ageGroup": [
+        {
+            "agegroup": "0-4"
+        },
+        {
+            "agegroup": "5-9"
+        },
+        {
+            "agegroup": "10-14"
+        },
+        {
+            "agegroup": "15-19"
+        },
+        {
+            "agegroup": "20-24"
+        },
+        {
+            "agegroup": "25-29"
+        },
+        {
+            "agegroup": "30-34"
+        },
+        {
+            "agegroup": "35-39"
+        },
+        {
+            "agegroup": "40-44"
+        },
+        {
+            "agegroup": "45-49"
+        },
+        {
+            "agegroup": "50-54"
+        },
+        {
+            "agegroup": "55-59"
+        },
+        {
+            "agegroup": "60-64"
+        },
+        {
+            "agegroup": "65-69"
+        },
+        {
+            "agegroup": "70-74"
+        },
+        {
+            "agegroup": "75-79"
+        },
+        {
+            "agegroup": "80+"
+        }
+    ],
+    "males": [
+        {
+            "datapoint": "-62378"
+        },
+        {
+            "datapoint": "-72081"
+        },
+        {
+            "datapoint": "-79682"
+        },
+        {
+            "datapoint": "-86586"
+        },
+        {
+            "datapoint": "-75478"
+        },
+        {
+            "datapoint": "-61377"
+        },
+        {
+            "datapoint": "-54635"
+        },
+        {
+            "datapoint": "-53045"
+        },
+        {
+            "datapoint": "-49738"
+        },
+        {
+            "datapoint": "-46677"
+        },
+        {
+            "datapoint": "-40922"
+        },
+        {
+            "datapoint": "-33693"
+        },
+        {
+            "datapoint": "-29708"
+        },
+        {
+            "datapoint": "-22181"
+        },
+        {
+            "datapoint": "-17098"
+        },
+        {
+            "datapoint": "-9536"
+        },
+        {
+            "datapoint": "-13481"
+        }
+    ],
+    "females": [
+        {
+            "datapoint": "54503"
+        },
+        {
+            "datapoint": "60207"
+        },
+        {
+            "datapoint": "64252"
+        },
+        {
+            "datapoint": "72793"
+        },
+        {
+            "datapoint": "74664"
+        },
+        {
+            "datapoint": "67740"
+        },
+        {
+            "datapoint": "59653"
+        },
+        {
+            "datapoint": "57653"
+        },
+        {
+            "datapoint": "53258"
+        },
+        {
+            "datapoint": "48123"
+        },
+        {
+            "datapoint": "39613"
+        },
+        {
+            "datapoint": "30955"
+        },
+        {
+            "datapoint": "30891"
+        },
+        {
+            "datapoint": "21453"
+        },
+        {
+            "datapoint": "16871"
+        },
+        {
+            "datapoint": "9279"
+        },
+        {
+            "datapoint": "14990"
+        }
+    ],
+    
+    "sectors":[
+        {
+            "datapoint":"Agriculture & Allied Activities"
+        },
+        {
+            "datapoint":"Pharma &Medicinal Products"
+        },
+        {
+            "datapoint":"Rubber and plastics products"
+        },
+        {
+            "datapoint":"Food Processing "
+        },
+        {
+            "datapoint":"Communication"
+        },
+        {
+            "datapoint":"Construction"
+        },
+        {
+            "datapoint":"Chemical & Chemical Products"
+        },
+        {
+            "datapoint":"Education and Training"
+        },
+
+       
+        {
+            "datapoint":"Hospitality"
+        },
+        {
+            "datapoint":"IT&ITES"
+        },
+        
+        {
+            "datapoint":"Manufacturing of Electrical Products"
+        },
+        {
+            "datapoint":"Manufacturing of Engineering Products"
+        },
+        
+        {
+            "datapoint":"Paper & Paper Products"
+        },
+       
+        {
+            "datapoint":"Retail"
+        },
+        
+        
+        {
+            "datapoint":"Transportations and Logistics"
+        }
+    ],  
+    "year17": [
+        {
+            "skilled": "NA",
+            "semi": "NA",
+            "unskilled": "171388"
+        },
+        {
+            "skilled": "NA",
+            "semi": "NA",
+            "unskilled": "NA"
+        },
+        {
+            "skilled": "86",
+            "semi": "345",
+            "unskilled": "431"
+        },
+        {
+            "skilled": "234",
+            "semi": "912",
+            "unskilled": "1329"
+        },
+        {
+            "skilled": "3154",
+            "semi": "9461",
+            "unskilled": "NA"
+        },
+        {
+            "skilled": "6020",
+            "semi": "12040",
+            "unskilled": "102335"
+        },
+        {
+            "skilled": "141",
+            "semi": "565",
+            "unskilled": "706"
+        },
+        
+        {
+            "skilled": "1427",
+            "semi": "9610",
+            "unskilled": "NA"
+        },
+        {
+            "skilled": "99",
+            "semi": "148",
+            "unskilled": "740"
+        },
+        {
+            "skilled": "NA",
+            "semi": "NA",
+            "unskilled": "NA"
+        },
+        {
+            "skilled": "32",
+            "semi": "127",
+            "unskilled": "159"
+        },
+        {
+            "skilled": "50",
+            "semi": "200",
+            "unskilled": "250"
+        },
+        
+        
+        {
+            "skilled": "48",
+            "semi": "193",
+            "unskilled": "241"
+        },
+        {
+            "skilled": "2459",
+            "semi": "2459",
+            "unskilled": "19674"
+        },
+        
+       
+        {
+            "skilled": "186",
+            "semi": "2954",
+            "unskilled": "3514"
+        }
+    ],  
+            "tyear17": [
+       {
+            "skilled": "NA",
+            "semi": "NA",
+            "unskilled": "171388"
+        },
+        {
+            "skilled": "NA",
+            "semi": "NA",
+            "unskilled": "NA"
+        },
+        {
+            "skilled": "86",
+            "semi": "345",
+            "unskilled": "431"
+        },
+        {
+            "skilled": "234",
+            "semi": "912",
+            "unskilled": "1329"
+        },
+        {
+            "skilled": "3154",
+            "semi": "9461",
+            "unskilled": "NA"
+        },
+        {
+            "skilled": "6020",
+            "semi": "12040",
+            "unskilled": "102335"
+        },
+        {
+            "skilled": "141",
+            "semi": "565",
+            "unskilled": "706"
+        },
+        
+        {
+            "skilled": "1427",
+            "semi": "9610",
+            "unskilled": "NA"
+        },
+        {
+            "skilled": "99",
+            "semi": "148",
+            "unskilled": "740"
+        },
+        {
+            "skilled": "NA",
+            "semi": "NA",
+            "unskilled": "NA"
+        },
+        {
+            "skilled": "32",
+            "semi": "127",
+            "unskilled": "159"
+        },
+        {
+            "skilled": "50",
+            "semi": "200",
+            "unskilled": "250"
+        },
+        
+        
+        {
+            "skilled": "48",
+            "semi": "193",
+            "unskilled": "241"
+        },
+        {
+            "skilled": "2459",
+            "semi": "2459",
+            "unskilled": "19674"
+        },
+        
+       
+        {
+            "skilled": "186",
+            "semi": "2954",
+            "unskilled": "3514"
+        }
+    ],
+        
+    "year22": [
+       {
+            "skilled": "NA",
+            "semi": "NA",
+            "unskilled": "166950"
+        },
+        {
+            "skilled": "NA",
+            "semi": "NA",
+            "unskilled": "NA"
+        },
+        {
+            "skilled": "110",
+            "semi": "438",
+            "unskilled": "548"
+        },
+        {
+            "skilled": "477",
+            "semi": "1854",
+            "unskilled": "2702"
+        },
+        {
+            "skilled": "4614",
+            "semi": "13843",
+            "unskilled": "NA"
+        },
+        {
+            "skilled": "12800",
+            "semi": "25600",
+            "unskilled": "217597"
+        },
+        {
+            "skilled": "248",
+            "semi": "992",
+            "unskilled": "1240"
+        },
+        
+        {
+            "skilled": "2033",
+            "semi": "13688",
+            "unskilled": "NA"
+        },
+        {
+            "skilled": "144",
+            "semi": "216",
+            "unskilled": "1081"
+        },
+        {
+            "skilled": "NA",
+            "semi": "NA",
+            "unskilled": "NA"
+        },
+        {
+            "skilled": "40",
+            "semi": "161",
+            "unskilled": "202"
+        },
+        {
+            "skilled": "61",
+            "semi": "244",
+            "unskilled": "305"
+        },
+        
+        
+        {
+            "skilled": "61",
+            "semi": "245",
+            "unskilled": "306"
+        },
+        {
+            "skilled": "3594",
+            "semi": "3594",
+            "unskilled": "28752"
+        },
+        
+       
+        {
+            "skilled": "312",
+            "semi": "4947",
+            "unskilled": "5886"
+        }
+    ],
+            
+            "tyear22": [
+       {
+            "skilled": "NA",
+            "semi": "NA",
+            "unskilled": "166950"
+        },
+        {
+            "skilled": "NA",
+            "semi": "NA",
+            "unskilled": "NA"
+        },
+        {
+            "skilled": "110",
+            "semi": "438",
+            "unskilled": "548"
+        },
+        {
+            "skilled": "477",
+            "semi": "1854",
+            "unskilled": "2702"
+        },
+        {
+            "skilled": "4614",
+            "semi": "13843",
+            "unskilled": "NA"
+        },
+        {
+            "skilled": "12800",
+            "semi": "25600",
+            "unskilled": "217597"
+        },
+        {
+            "skilled": "248",
+            "semi": "992",
+            "unskilled": "1240"
+        },
+        
+        {
+            "skilled": "2033",
+            "semi": "13688",
+            "unskilled": "NA"
+        },
+        {
+            "skilled": "144",
+            "semi": "216",
+            "unskilled": "1081"
+        },
+        {
+            "skilled": "NA",
+            "semi": "NA",
+            "unskilled": "NA"
+        },
+        {
+            "skilled": "40",
+            "semi": "161",
+            "unskilled": "202"
+        },
+        {
+            "skilled": "61",
+            "semi": "244",
+            "unskilled": "305"
+        },
+        
+        
+        {
+            "skilled": "61",
+            "semi": "245",
+            "unskilled": "306"
+        },
+        {
+            "skilled": "3594",
+            "semi": "3594",
+            "unskilled": "28752"
+        },
+        
+       
+        {
+            "skilled": "312",
+            "semi": "4947",
+            "unskilled": "5886"
+        }
+       
+       ]
+    }

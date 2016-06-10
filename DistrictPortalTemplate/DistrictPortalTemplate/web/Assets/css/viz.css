@@ -1,0 +1,301 @@
+/* 
+    Document   : viz
+    Created on : Sep 11, 2015, 9:22:30 PM
+    Author     : sandy
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.mapovelay{
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    padding: 0;
+    background-color: white;
+    z-index: 2;
+
+}
+
+.overlayPanel{
+    height: 421px;
+    opacity: 0.2;
+    position: absolute;
+    top: 47px;
+    left: 0px;
+    padding: 0;
+    max-height: 421px;
+    overflow-style: scrollbar;
+    overflow-y: auto;
+    background-color: white;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+.overlayPanel:hover{
+    opacity: 1;
+}
+
+.findBox{
+    padding: 0;
+    border-bottom: 1px solid #CACACA;
+}
+
+.findBox input, .findBox span{
+    color: #0C6A9A !important;
+    background-color: white
+}
+
+.itemList{
+    list-style: none;
+    padding: 0;    
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.mapItem{
+    width: 100%;
+    padding: 10px 20px 10px 35px;
+    font-size: 15px;
+    color: #0C6A9A;
+    background-color: #fff;
+    border-bottom: 1px solid #DDDDDD;
+    -webkit-transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    min-width: 200px;
+}
+
+.AgriMapItem{
+    width: 100%;
+    padding: 10px 20px 10px 35px;
+    font-size: 15px;
+    color: #0C6A9A;
+    background-color: #fff;
+    border-bottom: 1px solid #DDDDDD;
+    -webkit-transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    min-width: 200px;
+}
+
+.mapItem a{
+    text-decoration: none;
+}
+
+.AgriMapItem a{
+    text-decoration: none;
+}
+
+.mapItem button{
+    padding: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.mapItem:hover{
+    background-color: #EAEAEA;
+}
+
+.AgriMapItem button{
+    padding: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.AgriMapItem:hover{
+    background-color: #EAEAEA;
+}
+
+input[id='findNear']::-webkit-input-placeholder {
+    color: #0C6A9A;
+}
+
+.quickoverlay{
+    background-color: transparent;
+    left: 97%;
+    font-size: 30px;
+    color: #0C6A9A;
+    top: 45%;
+    position: fixed;
+    z-index: 10000;
+    margin-right: 10px;
+}
+
+.quickLinkBox{
+    background-color: rgba(246, 247, 253, 0.53);
+    margin: 2px 0px;
+    vertical-align: middle;
+    padding: 10px;
+    line-height: 1px;
+    -webkit-transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.quickLinkBox span{
+    top: 0px !important;
+}
+
+.quickLinkBox a{
+    text-decoration: none;
+}
+
+.quickLinkBox:hover{
+    background-color: white;
+}
+
+.mapIcon{
+    background-image: url('../img/mapBox.ioc');
+}
+
+
+.overlayPanel::-webkit-scrollbar-thumb {
+    background-color: #337ab7;
+    border-radius: 20px;
+    height: 100px;
+}
+
+.overlayPanel::-webkit-scrollbar {
+    width: 2px;
+}
+
+.overlayPanel::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+    border-left: 1px solid transparent;
+}
+
+.stat-card{
+    display: block;
+    height: 500px;
+}
+
+.summaryTile{
+    position: absolute;
+    z-index: 10001;
+    top: 2%;
+    left: 35%;
+}
+
+.closeSummary{
+    cursor: pointer;
+}
+
+.generalSumarry{
+    height: 400px;
+    /*background-color: rgb(245, 245, 245);*/
+}
+
+.summaryDataTile{
+    height: 100px;
+    float: left;
+    padding: 0;
+}
+
+
+.summaryDataTile:nth-child(even){
+    background-color: #eee;
+}
+
+.overlayDataTile{
+    background-color: rgba(0,0,0,0.4);
+    text-align: center;
+    -webkit-transition: all 0.4s ease-in-out;    
+    position: absolute;
+    width: 100%;
+    color: white;
+    height: 20%;
+    top: 80%;
+}
+
+.overlayDataTile p{
+    vertical-align: middle;
+}
+
+.chartBox{
+    /*position: absolute;*/
+    height: 100px;
+    padding: 0;
+    top: -0px;
+
+}
+
+.summaryCard{
+    height: 133px;
+    /*background-color: rgba(67, 67, 72, 0.36);*/
+    /*border: rgba(119, 119, 119, 0.50);*/
+    padding: 0px;
+}
+
+.summaryCard:nth-child(1), .summaryCard:nth-child(4){
+    /*background-color: rgb(124, 181, 236);*/
+}
+
+.cardInner{
+    /*box-shadow: 0px 0px 1px 1px grey;*/
+    border: 1px solid rgba(197, 197, 197, 0.25);
+    height: 100%;
+    width: 100%;
+
+}
+
+.datapoint{
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    padding: 5%;
+    color: rgb(169, 173, 175);
+}
+
+.dataValue{
+    font-size: 25px;
+    padding: 3%;
+    padding-top: 0%;
+    padding-left: 4%;
+    color: rgb(147, 153, 156);
+}
+
+.shareIcon{
+    font-size: 22px;
+    font-weight: 100;
+    position: absolute;
+    top: 13px;
+    left: 83%;
+
+}
+
+.dataunit{
+    font-size: 2vw;
+}
+
+.dataIcon{
+    font-size: 3vw;
+    padding: 9%;
+    /*line-height: 1px;*/
+    padding-top: 7%;
+    color: #7CB5EC;
+    cursor: pointer;
+}
+
+.valCard{
+    text-align: center;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: lighter;
+}
+
+.numVal{
+
+}
+
+.cardLable{
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 13px;
+    fill: #333333;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+}
+
+.summaryQuote{
+    border-left: 1px solid lightgray;
+    margin-top: 15%;
+    padding-left: 10px;
+}

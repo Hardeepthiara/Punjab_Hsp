@@ -1,0 +1,22 @@
+{
+    "name": "Population", "size": 1586625,
+    "children": [
+        {
+            "name": "Workers", "size": 544716,
+            "children": [
+                {"name": "Main Workers", "size": 26.23, 
+                    "children": [
+                       
+                    ]
+                },
+                {"name": "Marginal Workers", "size": 6.21
+                            ,
+                    "children": [
+                        
+                    ]
+                }
+            ]
+        },
+        {"name": "Non Workers", "size": 61.1 ,"children":[]}
+    ]
+}

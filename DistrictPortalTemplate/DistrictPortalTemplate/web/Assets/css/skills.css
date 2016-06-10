@@ -1,0 +1,137 @@
+.container{
+    margin-top: 12px;
+}
+.section-title{
+    text-align: center;
+    padding: 12px 0;
+    font-size: 15pt;
+    margin-bottom: 10px;
+    background: #F7FDFF;
+}
+.pie-div{
+    height: 85px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.pie-wrap{
+    background: #f3f3f3
+}
+.pie-wrap .tile .title{
+    margin-bottom: 7px;
+}
+.data{
+    margin-bottom: 25px;
+}
+.card-title{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 1.3em;
+    color: #666;
+    border-bottom: 1px solid #ccc;
+}
+.table{
+    margin-bottom: 0px !important;
+}
+.card-input{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ccc;
+}
+.card-input label{
+    cursor: pointer;    
+}
+.card-input input[type="checkbox"]{
+    display: none
+}
+.card-input input[type="checkbox"]+span{
+    margin-right: 10px;
+    padding: 0px 7px;
+    background: #fff;
+    position: relative;
+    top: 2px;
+    border: 3px solid #e8e8e8
+}
+.card-input label{
+    font-weight: normal;
+}
+.card-input input[type="checkbox"]:checked+span{
+    background: #C3F5C9;
+    border: 3px solid #69BB73;
+}
+.text-data{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+    border:1px solid #ABDCC6
+}
+.text-data a{
+    text-decoration: none;
+}
+.text-data .title{
+    color: #5d5d5d;
+    padding-top: 10px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.text-data .row-item{
+    padding: 0 15px;
+}
+.text-data .data-item{
+    color: #666;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+/*#youth1 .highcharts-container,#youth2 .highcharts-container{
+    top:-35px !important;
+}
+#youth1 .highcharts-container rect,#youth2 .highcharts-container rect{
+    fill:none;
+}*/
+.data-tile{
+    width: 32%;
+    float: left;
+    margin-left: 11px;}
+.data{
+    margin-bottom: 25px;
+}
+.sunburst{
+    height: 500px;
+    margin: 0 auto;
+}
+.tile{
+    background: #0E988B;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+}
+.tile.long{
+    padding-top: 11px
+}
+.pie-div .highcharts-container{
+    top:-33px !important;
+}
+.pie-div .highcharts-container rect{
+    fill:none;
+}
+.border-bottom{
+    border-bottom: 1px solid #ccc;
+}
+.padding{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.border-left{
+    border-left: 1px solid #ccc
+}
+.border-right{
+    border-right: 1px solid #ccc
+}
+.button-container{
+    text-align: center;
+    border-top: 1px solid #E2E2E2;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.download span{
+   color: #666 
+}

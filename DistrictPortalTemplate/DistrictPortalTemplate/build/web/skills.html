@@ -1,0 +1,746 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Skills Profile</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="Assets/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="Assets/css/style.css" rel="stylesheet" />
+        <link href="Assets/css/skills.css" rel="stylesheet" />
+        <link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
+        <link href="Assets/css/GoogleEarthCSS.css" rel="stylesheet"/>
+        <style>
+            .d3-tip {
+                line-height: 1;
+                font-weight: bold;
+                padding: 12px;
+                background: rgba(0, 0, 0, 0.8);
+                color: #fff;
+                border-radius: 2px;
+            }
+
+            /* Creates a small triangle extender for the tooltip */
+            .d3-tip:after {
+                box-sizing: border-box;
+                display: inline;
+                font-size: 10px;
+                width: 100%;
+                line-height: 1;
+                color: rgba(0, 0, 0, 0.8);
+                content: "\25BC";
+                position: absolute;
+                text-align: center;
+            }
+
+            /* Style northward tooltips differently */
+            .d3-tip.n:after {
+                margin: -1px 0 0 0;
+                top: 100%;
+                left: 0;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-tcs">
+            <div class="container">
+                <div class="col-lg-12 header-title">
+                    Hoshiarpur, Punjab   <div id="google_translate_element" class="pull-right"></div>
+                </div>
+                <div class="collapse navbar-collapse" id="header">
+                </div>
+            </div>
+            <div class="navbar-sec">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                            <a class="drawer-menu pull-left"><span class="glyphicon glyphicon-menu-hamburger"></span> Menu</a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 pull-right hidden-xs">
+                            <input class="search-box" type="text" placeholder="Search. . ." />
+                            <span class="glyphicon glyphicon-search pull-left"></span>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-7 pull-right" id="tour">
+                            <a class="pull-right"><span class="glyphicon glyphicon-globe"></span> Google Earth Tour</a>
+                        </div>
+                    </div>
+                    <div class="row visible-xs">
+                        <div class="col-xs-12" style="padding: 0px;">
+                            <input class="search-box" type="text" placeholder="Search and explore your district. . ." />
+                            <span class="glyphicon glyphicon-search pull-left"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid float-menu">
+            <div class="row">
+                <div class="backdrop">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-5 drawer">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-sm-12 menu-header">
+                            <span class="glyphicon glyphicon-menu-hamburger"></span> Menu<span class="close push-drawer">&times;</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-sm-12">
+                            <ul class="menu-links">
+                                <li><a href="index.html">District Profile</a></li>
+
+                                <li class="submenu" ><a href="index.html#admin">Administration</a></li>
+                                <li class="submenu"><a href="index.html#people">People’s Representatives</a></li>
+                                <li class="submenu"><a href="index.html#tourism">Tourism</a></li>
+                                <li class="submenu"><a href="index.html#agri">Agriculture</a></li>
+
+                                <li><a href="schemes.html">Schemes</a></li>
+                                <li><a href="skills.html">Skills Profile</a></li>
+                                <li><a href="analytics.html">Analytics</a></li>
+                                <!--<li><a href="#" data-toggle="modal" data-target="#enrollModal">Enroll</a></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="head1 col-lg-12 col-md-12 col-sm-12 col-xs-12 border-bottom section-title" style="margin-bottom: 15px;">
+            Skills Profile              
+        </div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12 col-md-12">
+                    <div class="section-card">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 border-bottom section-title" style="text-align: left; padding: 15px;">
+                                Human Capital
+                            </div>
+                            <div class="col-lg-12 col-md-12 border-bottom">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 padding border-right">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 pie-div">
+                                                <div class="pie-wrap">
+                                                    <div class="row">
+                                                        <div class="col-lg-5 col-md-5" title="Total Population">
+                                                            <div class="tile">
+                                                                <div class="title"><strong>Total Population</strong></div>
+                                                                <div>15,86,625</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-7 col-md-7">
+                                                            <div id="total" style="height: 150px">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12 pie-div">
+                                                <div class="pie-wrap">
+                                                    <div class="row">
+                                                        <div class="col-lg-5 col-md-5" title="Age group (10-14,15-19,20-24,25-29)">
+                                                            <div class="tile">
+                                                                <div class="title"><strong>Population of youth</strong></div>
+                                                                <div>5,82,572</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-7 col-md-7">
+                                                            <div id="youth" style="height:150px;">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12 pie-div">
+                                                <div class="pie-wrap">
+                                                    <div class="row">
+                                                        <div class="col-lg-5 col-md-5" title="Age group (15-19,20-24,25-29,30-34,35-39,40-44,45-49,50-54,55-59)">
+                                                            <div class="tile">
+                                                                <div class="title"><strong>Working age population</strong></div>
+                                                                <div>1,006,603</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-7 col-md-7">
+                                                            <div id="work" style="height: 150px;">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12 pie-div">
+                                                <div class="pie-wrap">
+                                                    <div class="row">
+                                                        <div class="col-lg-5 col-md-5" title="Age group (0-4,5-9,10-14)">
+                                                            <div class="tile long">
+                                                                <div class="title"><strong>Youth entering workforce in next 15 years</strong></div>
+                                                                <div>393,103</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-7 col-md-7">
+                                                            <div id="next-youth" style="height : 150px;">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div id="hch">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 border-bottom section-title" style="text-align: left; padding: 15px;">
+                                Skill Gap Report
+                            </div>
+                            <div class="col-lg-12 col-md-12 border-bottom">
+                                <div style="padding-top: 10px;" class="row">
+                                    <div class="col-lg-6" >
+                                        <div>
+                                            <div id="year17">
+
+                                            </div>
+                                        </div>
+                                        <div class="button-container">
+                                            <button class="btn btn-primary"  data-toggle="modal" data-btn="btn7" data-target="#myModal">Show table</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <div id="year22">
+
+                                            </div>
+                                        </div>
+                                        <div class="button-container">
+                                            <button class="btn btn-primary"  data-toggle="modal" data-btn="btn22" data-target="#myModal">Show table</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 border-bottom section-title" style="text-align: left; padding: 15px;">
+                                Educational Infrastructure
+                            </div>
+                            <div class="col-lg-12 col-md-12 border-bottom">
+                                <div class="row padding">
+                                    <div class="col-lg-12 col-md-12">
+
+                                        <!--                                        
+                                                Change href attribute of <a> in text-data to allow user to download file corresponding file location
+                                        -->
+
+                                        <div class="data-tile">
+                                            <div class="text-data">
+                                                
+                                                    <div class="title">Primary Schools</div>
+                                                    <div class="row row-item">
+                                                        <div class="col-lg-12 col-md-12">
+                                                            <div class="row">
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="data-item"><div class="col-lg-4 col-md-5 col-md-offset-1 col-lg-offset-2">1271</div>  
+                                                                        <div class="col-lg-4 col-md-5"></div><br></div> 
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="data-tile">
+                                            <div class="text-data">
+                                                
+                                                    <div class="title">Upper Primary Schools</div>
+                                                    <div class="row row-item">
+                                                        <div class="col-lg-12 col-md-12">
+                                                            <div class="row">
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="data-item"><div class="col-lg-4 col-md-5 col-md-offset-1 col-lg-offset-2">2513</div>  
+                                                                        <div class="col-lg-4 col-md-5"></div><br></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="data-tile">
+                                            <div class="text-data">
+                                               
+                                                    <div class="title">Secondary Schools</div>
+                                                    <div class="row row-item">
+                                                        <div class="col-lg-12 col-md-12">
+                                                            <div class="row">
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="data-item">5270</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="data-tile">
+                                            <div class="text-data">
+                                                
+                                                    <div class="title">Colleges</div>
+                                                    <div class="row row-item">
+                                                        <div class="col-lg-12 col-md-12">
+                                                            <div class="row">
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="data-item">55</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                                                        </div>
+                                        </div>
+                                        <div class="data-tile">
+                                            <div class="text-data">
+                                               
+                                                    <div class="title">Universities</div>
+                                                    <div class="row row-item">
+                                                        <div class="col-lg-12 col-md-12">
+                                                            <div class="row">
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="data-item">1</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12 border-bottom">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 padding">
+                                        <div>
+                                            <div id="skilchart1">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 padding">
+                                        <div>
+                                            <div id="skilchart2">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12 border-bottom section-title" style="text-align: left; padding: 15px;"> 
+                                Skills Training Infrastructure
+                            </div>
+                            <div class="col-lg-12 col-md-12 border-bottom">
+                                <div class="row padding">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="section-card">
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12" style="padding: 0px">
+                                                    <div id="map1" style="height: 250px">
+
+                                                    </div>
+                                                    <!--
+                                                        Display Map for ITI using Mapbox
+                                                    -->
+                                                </div> 
+                                                <div class="col-lg-12 col-md-12 card-title" data-toggle="modal" data-btn="ITI" data-target="#myModal">
+                                                    ITIs<span class="pull-right">19</span>
+                                                    <!--                                                    
+                                                        On click of this div display modal showing table with two columns:
+                                                        1. Name
+                                                        2. Location
+                                                    -->
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="section-card">
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12" style="padding: 0px">
+                                                    <div id="map2" style="height: 250px">
+
+                                                    </div>
+                                                    <!--
+                                                        Display Map for NSDC using Mapbox
+                                                    -->
+                                                </div> 
+                                                <div class="col-lg-12 col-md-12 card-title" data-toggle="modal" data-btn="nsdc" data-target="#myModal">
+                                                    NSDC Centers<span class="pull-right">0</span>
+                                                    
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12 border-bottom">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 border-right" style="padding-bottom: 12px">
+                                        <div class="row border-bottom section-title" style="text-align: left; padding: 15px;">
+                                            Workforce Distribution
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="sunburst">
+                                                    <!--         
+                                                         Refer to following link for zoomable sunburst chart with labels
+                                                         http://bl.ocks.org/metmajer/5480307
+                                                    -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6" style="">
+                                        <div class="row border-bottom section-title" style="text-align: left; padding: 15px;">
+                                            Industries & Employers
+                                        </div>
+                                        <div class="section-card">
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12" style="padding: 0px">
+                                                    <div id="map3" style="height: 250px">
+
+                                                    </div>
+                                                    <!--
+                                                          Display Map for NSDC using Mapbox
+                                                    -->
+                                                </div> 
+
+                                                <!--                                                
+                                                    On change of following checkboxes change Map data
+                                                -->
+
+                                                <div class="col-lg-12 col-md-12 card-input">
+                                                    <label for="id1">
+                                                        <input id="id1" type="checkbox" value=""><span></span>Industries
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 card-input">
+                                                    <label for="id2">
+                                                        <input id="id2" type="checkbox" value=""><span></span>Large Employers
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 card-input">
+                                                    <label for="id3">
+                                                        <input id="id3" type="checkbox" value="" disabled="true"><span></span>Industrial Estate
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 card-input">
+                                                    <label for="id4">
+                                                        <input id="id4" type="checkbox" value=""><span></span>Special Economic Zones
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                           
+
+                            <div class="col-lg-12 col-md-12 border-bottom section-title" style="text-align: left; padding: 15px;">
+                                Clusters
+                            </div>
+                            <div class="col-lg-12 col-md-12 border-bottom">
+                                <div class="row padding">
+                                    <!--                                
+                                            Thumbnail sizes:-
+                                             Large Screen: 3
+                                             Medium Screen: 4
+                                    -->
+                                    <div class="col-lg-3 col-md-4">
+                                        <div class="section-card">
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12 image-container">
+                                                    <img src="Assets/img/tra.jpg" class="img-responsive" >
+                                                </div> 
+                                                <div class="col-lg-12 col-md-12 card-title">
+                                                    <a href="Assets/img/tra.jpg" target="_blank">Tractor and Auto parts </a>
+                                                </div> 
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                     <div class="col-lg-3 col-md-4">
+                                        <div class="section-card">
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12 image-container">
+                                                    <img src="Assets/img/pre.jpg" class="img-responsive" >
+                                                </div> 
+                                                <div class="col-lg-12 col-md-12 card-title">
+                                                    <a href="Assets/img/pre.jpg" target="_blank">Pressure Cooker Parts  </a>
+                                                </div> 
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                      <div class="col-lg-3 col-md-4">
+                                        <div class="section-card">
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12 image-container">
+                                                    <img src="Assets/img/sew.jpg" class="img-responsive" >
+                                                </div> 
+                                                <div class="col-lg-12 col-md-12 card-title">
+                                                    <a href="Assets/img/sew.jpg" target="_blank">Sewing threads and Handicrafts   </a>
+                                                </div> 
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        &COPY; 2010-2015 Tata Consultancy Services Limited. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="modal fade" id="tourModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Google Earth Tour</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-0 col-xs-offset-0" id="tourVideoDiv">
+                                <div class="clearfix export">
+                                    <p><a class="export-link" href="Assets/data/GE-Tours/Punjab_Hoshiarpur.zip" download>Download KML</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div></div></div></div>
+        <div class="modal fade" id="enrollModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Enroll</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-0 col-xs-offset-0">
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="inputEmail" class="col-sm-3 col-lg-3 control-label">Email</label>
+                                        <div class="col-sm-9">
+                                            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputMobile" class="col-sm-3 control-label">Mobile no.</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="inputMobile" placeholder="Mobile number">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Enroll</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body scroll_modal">
+
+                    </div>
+                    <div class="modal-footer">
+                        <a download class="btn btn-default pull-left download"><span class="glyphicon glyphicon-download-alt"></span> &nbsp;&nbsp;Download</a>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="Assets/js/jquery-1.11.1.min.js"></script>
+        <script src="Assets/bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+        <script src="Assets/js/script.js"></script>
+        <script src="Assets/js/highcharts.js"></script>
+        <script src="Assets/js/hchart.js"></script>
+        <script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+        <script src='Assets/js/sunburst.js'></script>
+        <script src="Assets/js/GoogleEarthJS.js"></script>
+
+
+
+        <script>
+            $(function() {
+                // Age categories
+                var male = [
+-62378, -72081, -79682, -86586, -75478, -61377, -54635, -53045, -49738, -46677, -40922, -33693, -29708, -22181, -17098, -9536, -13481
+];
+                var categories = ['0-4', '5-9', '10-14', '15-19',
+                    '20-24', '25-29', '30-34', '35-39', '40-44',
+                    '45-49', '50-54', '55-59', '60-64', '65-69',
+                    '70-74', '75-79', '80+'];
+                $(document).ready(function() {
+                    $('#hch').highcharts({
+                        chart: {
+                            type: 'bar'
+                        },
+                        title: {
+                            text: 'Age Distribution for Hoshiarpur, Punjab'
+                        },
+//                        subtitle: {
+//                            text: 'Source: Census 2011</a>'
+//                        },
+                        xAxis: [{
+                                categories: categories,
+                                reversed: false,
+                                labels: {
+                                    step: 1
+                                },
+                                title: {
+                                    text: 'Age Group'
+                                }
+
+                            },
+                            {// mirror axis on right side
+                                opposite: true,
+                                reversed: false,
+                                categories: categories,
+                                linkedTo: 0,
+                                labels: {
+                                    step: 1
+                                },
+                                title: {
+                                    text: 'Age Group'
+                                }
+                            }],
+                        yAxis: {
+                            title: {
+                                text: 'Population'
+                            },
+                            labels: {
+                                formatter: function() {
+                                    return indianFormat(Math.abs(this.value));
+                                }
+                            }
+                        },
+                        plotOptions: {
+                            series: {
+                                stacking: 'normal',
+                                dataLabels: {
+                                    enabled: true,
+                                    style: {
+                                        fontSize: "11px",
+                                        opacity: 1
+                                    },
+                                    formatter: function() {
+                                        return Highcharts.numberFormat(this.y, 0, "", ",");
+                                    }
+                                }
+                            }
+                        },
+                        tooltip: {
+                            enabled: true,
+                            formatter: function() {
+                                return '' + this.series.name + ':' + this.point.category + '<br>' +
+                                        indianFormat(Math.abs(this.y));
+//                                        Highcharts.numberFormat(Math.abs(this.point.y), 0, "", ",");
+                            }
+                        },
+                        series: [{
+                                color: "#01579b",
+                                dataLabels: {
+                                    align: "left",
+                                    color: "#000000",
+                                    formatter: function() {
+
+                                        return (this.x + "") === ('10-14') ? indianFormat(Math.abs(this.y)) : "";
+                                    },
+                                    style: {fontWeight: "normal"}
+                                },
+                                        x:-45,
+                                name: 'Male',
+                                data: male
+                            }, {
+                                color: "#f48fb1",
+                                dataLabels: {
+                                    align: "right",
+                                    color: "#000000",
+                                    formatter: function() {
+                                        return (this.x + "") === ("10-14") ? indianFormat(Math.abs(this.y)) : "";
+                                    },
+                                    style: {fontWeight: "normal"}
+                                },x:45,
+                                name: 'Female',
+                                data: [
+54503, 60207, 64252, 72793, 74664, 67740, 59653, 57653, 53258, 48123, 39613, 30955, 30891, 21453, 16871, 9279, 14990
+]
+                            }]
+                    });
+                });
+
+            });
+
+        </script>
+
+        <script>
+            $(function() {
+                selectchart("total");
+                selectchart("youth");
+                selectchart("work");
+                selectchart("next-youth");
+                selectstkchart("year17");
+                selectstkchart("year22");
+            });
+
+
+
+        </script>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,hi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+            }
+        </script><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    </body>
+</html>
